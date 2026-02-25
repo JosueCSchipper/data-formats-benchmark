@@ -14,6 +14,7 @@ El objetivo principal es evaluar distintas librerías para reducir los tiempos d
 - **Arquitectura Extensible:** El motor de pruebas utiliza un diccionario de funciones lambda, lo que facilita la integración de nuevas librerías o formatos con mínimos cambios en el código base.
 - **Estabilidad de Métricas:** Implementa el cálculo de **Media Acotada (Trimmed Mean)** para filtrar picos de latencia del hardware o del sistema operativo, garantizando resultados estadísticamente representativos.
 - **Reportes Automatizados:** Genera un archivo `results_summary.xlsx` para identificar rápidamente la herramienta más veloz por métrica.
+![Vista del Reporte Generado](reporte_preview.png)
 
 ## Formatos Evaluados
 - **CSV:** Formato estándar de texto plano para intercambio de datos.
@@ -40,4 +41,5 @@ El objetivo principal es evaluar distintas librerías para reducir los tiempos d
 ## Roadmap y Trabajo Futuro
 - **Aceleración por GPU:** Evaluación de frameworks como RAPIDS (cuDF) y el motor GPU nativo de Polars ejecutados en entornos Linux para aprovechar la arquitectura CUDA.
 - **Compute-Bound Benchmarks:** Transición de métricas estrictamente orientadas a I/O (lectura/escritura en disco) hacia pruebas de transformaciones pesadas en memoria (JOINs masivos, Window Functions, GroupBys) para explotar el verdadero potencial del procesamiento paralelo en placas de video.
+
 - **Escalabilidad Cloud:** Ejecución del pipeline en instancias optimizadas para memoria en la nube para establecer líneas base de rendimiento fuera de entornos locales.
